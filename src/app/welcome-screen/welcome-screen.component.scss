@@ -11,7 +11,12 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(65, 134, 123);
+    background-image: linear-gradient(to bottom right, rgb(108, 199, 184),rgb(42, 94, 83));
+}
+
+.btn{
+    background-image: linear-gradient(to bottom right, rgb(100, 199, 182),rgb(42, 94, 83));
+
 }
 
 .btn:hover{
