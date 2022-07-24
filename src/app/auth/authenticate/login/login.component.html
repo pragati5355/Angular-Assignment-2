@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 text-center font-weight-bold leftCol" 
+        style="
+        color: white;display: flex;
+        align-items: center;
+        justify-content: center;">
+            <p style="font-size: 20px; font-style:italic">WelCome Back
+                <br>
+            To keep connected with us please login here with your personal information.</p>
+        </div>
+        <div class="col-md-4 rightCol" style="
+        align-items: center;
+        justify-content: center;
+        margin-top: 170px;">
+          <h3>Sign In </h3>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="login.email" [ngModelOptions]="{standalone: true}">
+                  <div *ngIf="invalidemail" class="danger" style="color: red;">
+                    Email is Invalid and it must end with '@gmail.com' . 
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}">
+                  <div *ngIf="invalidpassword" class="danger" style="color: red;">
+                    Password is Invalid and must contain atleast 8 characters.
+                  </div>
+                </div>
+                <button type="submit" (click)="signin()" class="btn font-weight-bold" >Submit</button>
+              </form>
+        </div> 
+    </div>                          
+</div>

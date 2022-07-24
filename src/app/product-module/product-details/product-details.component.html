@@ -1,0 +1,102 @@
+<div class="container-fluid page" >
+
+    <div class="card" style="padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+  
+      <div class="card-body">
+        
+          <!-- hello-text -->
+          <div 
+          class="font-weight-bold text-center" 
+          style="margin: 15px 15px 15px 15px ; font-style: oblique;color: rgb(65, 134, 123);">
+              <h2>Product Details</h2>
+          </div>
+
+
+             <!-- Id  -->
+            <div style="margin-top: 20px; " class="font-weight-bold">
+                <p 
+                class="card-subtitle mb-2" 
+                style="font-size: 20px; color: rgb(68, 160, 129);">Id : 
+                <span style="color: black;">{{product.id}}</span>
+                </p>
+            </div>
+          
+        
+           <!-- Product-Name  -->
+           <div style="margin-top: 20px; ">
+                <p 
+                class="card-subtitle mb-2" 
+                style="font-size: 20px; color: rgb(68, 160, 129);">Product Name : 
+                <span style="color: black;">{{product.product_name | titlecase}}</span>
+                </p>
+           </div>
+
+           <!-- Category  -->
+           <div style="margin-top: 20px; ">
+                 <p 
+                 class="card-subtitle mb-2" 
+                 style="font-size: 20px; color: rgb(67, 145, 117);"> Category : 
+                 <span style="color: black;">{{product.category}}</span>
+                 </p>
+           </div>
+
+           <!-- Price  -->
+           <div style="margin-top: 20px; ">
+                <p class="card-subtitle mb-2" style="font-size: 20px; color: rgb(68, 160, 129);">Price : <span style="color: black;">{{product.price | currency}}</span></p>
+           </div>
+
+           <!-- Serial No  -->
+           <div style="margin-top: 20px; ">
+                <p class="card-subtitle mb-2" style="font-size: 20px; color: rgb(68, 160, 129);">Serial No : <span style="color: black;">{{product.serial_no}}</span></p>
+           </div>
+
+            <!-- Release Date  -->
+            <div style="margin-top: 20px; ">
+                <p class="card-subtitle mb-2" style="font-size: 20px; color: rgb(68, 160, 129);">Release Date : <span style="color: black;">{{product.release_date | date: 'mediumDate'}}</span></p>
+            </div>
+
+            <!-- Stock Units -->
+            <div style="margin-top: 20px; ">
+                <p class="card-subtitle mb-2" style="font-size: 20px; color: rgb(68, 160, 129);">Stock Units: 
+                    
+                    <ng-template [ngIf]="product.stock_units > 10">
+                        <span style="color: rgb(6, 158, 52);">{{product.stock_units}}</span>
+                    </ng-template>
+                    <ng-template [ngIf]="product.stock_units <= 10 && product.stock_units > 3">
+                        <span style="color: orangered">{{product.stock_units}}</span>
+                    </ng-template>
+                    <ng-template [ngIf]="product.stock_units <= 3">
+                        <span style="color: rgb(245, 14, 14);">{{product.stock_units}}</span>
+                    </ng-template>
+                </p>
+           </div>
+           <!-- <div *ngIf="Names.stock_units > 10" style="color: rgb(44, 110, 44);">{{product.stock_units}}</div> -->
+  
+            <!-- Description  -->
+            <div style="margin-top: 20px; ">
+                <p class="card-subtitle mb-2" style="font-size:20px ; color: rgb(68, 160, 129);">Description : <span style="color: black;">{{product.description}}</span></p>
+            </div>
+         
+          
+          <!-- Button -->
+  
+          <div class="text-center" style="margin-top: 20px;">
+              <button type="button" (click)="openProductList()" class="btn btn-md text-white btn-rounded data-mdb-ripple-color" style="background-color: rgb(65, 134, 123);">Back</button>
+              
+          </div>
+  
+        
+      </div>
+     </div>
+  
+</div>
+  
+
+
+
+
+
+
+
+
+

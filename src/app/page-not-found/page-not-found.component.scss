@@ -1,0 +1,18 @@
+
+.container{
+    background-image: linear-gradient(to right, #96d1f3, #94d7fd);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    background-image: linear-gradient(to right, #21578a, #446a80);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,79 @@
+{
+  "login": [
+    {
+      "email" : "pragati@gmail.com",
+      "password" : "pragati"
+    },
+    {
+      "email" : "sayali@gmail.com",
+      "password" : "sayali"
+    },
+    {
+      "email" : "mansi@gmail.com",
+      "password" : "mansi"
+
+    }
+  ],
+  "products": [
+    {
+      "product_name": "samsumg",
+      "category": "TV",
+      "price": "2.3456",
+      "stock_units": "2",
+      "serial_no": "AD54HG",
+      "release_date": "2022-05-12",
+      "description": "sedf gth tgtgggggg",
+      "id": 7
+    },
+    {
+      "product_name": "Ipad",
+      "category": "Mobile",
+      "price": "1.3456",
+      "stock_units": "23",
+      "serial_no": "E34DFU7",
+      "release_date": "2019-02-19",
+      "description": "The iPad is a touchscreen tablet PC made by Apple . The original iPad debuted in 2010.",
+      "id": 8
+    },
+    {
+      "product_name": "frontload machine",
+      "category": "Washing-Machine",
+      "price": "4.3456",
+      "stock_units": "22",
+      "serial_no": "23DEF34",
+      "release_date": "2021-12-16",
+      "description": "front load washing machines are generally gentler on your clothes than top load ones.",
+      "id": 9
+    },
+    {
+      "product_name": "dsrl camera",
+      "category": "Camera",
+      "price": "5.345",
+      "stock_units": "2",
+      "serial_no": "23DEF34",
+      "release_date": "2022-02-10",
+      "description": "DSLR is a term with digital cameras, but a digital single-lens reflex camera .",
+      "id": 10
+    },
+    {
+      "product_name": "dell laptop",
+      "category": "laptop",
+      "price": "4.5678",
+      "stock_units": "6",
+      "serial_no": "ASDGT54GG",
+      "release_date": "2019-03-13",
+      "description": "Dell is Windows 10 laptop with a 15.60-inch display that has a resolution of 1920x1080 pixels. ",
+      "id": 11
+    },
+    {
+      "product_name": "lG refrigerator",
+      "category": "Refrigerator",
+      "price": "8.567",
+      "stock_units": "5",
+      "serial_no": "BHYTGF54VG",
+      "release_date": "2018-11-21",
+      "description": "A refrigerator, colloquially fridge and home appliance consisting of a thermally insulated .",
+      "id": 12
+    }
+  ]
+}

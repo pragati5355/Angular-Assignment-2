@@ -1,0 +1,89 @@
+<div class="container listpage">
+
+    <!-- Header -->
+    <div 
+    style="text-align: center;margin-top: 3rem;font-style: oblique; font-size: 20px;">
+        <h2 style="font-style:bold">Product List</h2>
+    </div>
+
+    <!-- Button -->
+    <div>
+        <button type="button" 
+         (click)="openAddnewproduct()" 
+         class="btn btn-sm text-white btn-rounded data-mdb-ripple-color" 
+         style="float: right; background-color: rgb(65, 134, 123); margin-top: 3rem;"
+         >Add New Product
+        </button>
+    </div>
+
+    <div>
+        <button type="button" 
+         (click)="backtowelcome()" 
+         class="btn btn-sm text-white btn-rounded data-mdb-ripple-color" 
+         style="float: left;; background-color: rgb(65, 134, 123); margin-top: 3rem;"
+         >Back
+        </button>
+    </div>
+
+    <!-- Table -->
+    <div style="margin-top: 10rem;">
+        <table class="table 
+        table-bordered 
+        table-sm 
+        table-borderless 
+        table-hover 
+        ">
+            <thead class="thead-light">
+                <tr style="background-color: rgb(68, 160, 129);">
+                  <th scope="col" class="th-sm">Id</th>
+                  <th scope="col" class="th-sm">Product Name</th>
+                  <th scope="col" class="th-sm">Category</th>
+                  <th scope="col" class="th-sm">Price</th>
+                  <th scope="col" class="th-sm">Stock_units</th>
+                  <th scope="col" class="th-sm">View</th>
+                  <th scope="col" class="th-sm">Actions</th>
+                </tr>
+            </thead>
+            
+            <tbody *ngFor="let name of Names" id="row">
+                <tr>
+                    <td>{{name.id}}</td>
+                    <td>{{name.product_name}}</td>
+                    <td>{{name.category}}</td>
+                    <td>{{name.price}}</td>
+                    <td>
+                        <ng-template [ngIf]="name.stock_units > 10">
+                            <span style="color: rgb(6, 158, 52);">{{name.stock_units}}</span>
+                        </ng-template>
+                        <ng-template [ngIf]="name.stock_units <= 10 && name.stock_units > 3">
+                            <span style="color: orangered">{{name.stock_units}}</span>
+                        </ng-template>
+                        <ng-template [ngIf]="name.stock_units <= 3">
+                            <span style="color: rgb(245, 14, 14);">{{name.stock_units}}</span>
+                        </ng-template>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" (click)="openProductdetails(name.id)">
+                            <span class="glyphicon glyphicon-list-alt"></span>View
+                        </button>
+                    </td>
+                    <td>
+                        <a class="btn mx-2 btn-outline-danger btn-sm" (click)="deleteDate(name.id)" style="color: red;">
+                            <span class="glyphicon glyphicon-trash"></span>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                
+            </tbody>
+          </table>
+    </div>
+    
+</div>
+
+
+
+
+
+
+

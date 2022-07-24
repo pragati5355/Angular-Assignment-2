@@ -1,0 +1,22 @@
+.card{
+    box-shadow: 10px 15px 15px 10px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.formpage{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(65, 134, 123);
+}
+
+.cardoverflow{
+    overflow: scroll;
+}
+
+.btn:hover{
+    letter-spacing: 0.5px;
+
+}
+
+

@@ -1,0 +1,17 @@
+.leftCol{
+    height: calc(100vh - 20px);
+    background-image: linear-gradient(to bottom right, rgb(100, 199, 182),rgb(42, 94, 83));
+}
+
+.rightCol{
+    height: calc(100vh - 20px);
+}
+
+.btn{
+    background-image: linear-gradient(to right, rgb(121, 199, 186),rgb(65, 134, 123));
+}
+
+.btn:hover{
+    letter-spacing: 0.5px;
+
+}
